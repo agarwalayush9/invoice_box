@@ -3,19 +3,19 @@ const router = express.Router();
 var fetchUser = require("../middleware/fetchUser");
 const { body, validationResult } = require("express-validator");
 const Invoice = require("../models/Invoice");
-const multer = require('multer');
+// const multer = require('multer');
 // File storage 
 
-const Storage = multer.diskStorage({
-  destination:'../bills',
-  filename:(req,file,cb)=>{
-    cb(null, file.originalname);
-  },
-});
+// const Storage = multer.diskStorage({
+//   destination:'../bills',
+//   filename:(req,file,cb)=>{
+//     cb(null, file.originalname);
+//   },
+// });
 
-const upload = multer({
-  storage:Storage
-}).single('testImage')
+// const upload = multer({
+//   storage:Storage
+// }).single('testImage')
 // Route 1: Get All the Entries using: GET "/api/invoice/getuser". Login required
 router.get("/fetchEntries", fetchUser, async (req, res) => {
   try {
@@ -39,26 +39,19 @@ router.post(
   ],
   async (req, res) => {
     try {
-      let invoice;
       const { title, description, tag} = req.body;
       //If there are errors, return Bad request and the errors
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
-      };
-    
-        if(err){
-          console.log(err)
-        }
-        else{
-          invoice = new Invoice({
+      }
+         const invoice = new Invoice({
             title,
             description,
             tag,
             user: req.user.id,
           });
           
-        }
      
       // console.log(invoice)
       // console.log(file)

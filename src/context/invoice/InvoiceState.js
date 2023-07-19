@@ -20,10 +20,10 @@ const InvoiceState =(props)=>{
         setInvoice(json)
       }
       // Add a frame
-      const addInvoice = async (title,description,tag,file)=>{
+      const addInvoice = async (title,description,tag)=>{
         // Make api call
          //API Call
-         console.log(file)
+        //  console.log(file)
          const response = await fetch(`${host}/api/invoice/addInvoice`,{
           method: 'POST',
           headers:{
