@@ -4,7 +4,7 @@ var cors = require('cors')
 
 connectToMongo();
 const app = express();
-const port = 5000;
+const port = 9002;
 
 // app.get('/',(req,res)=>{
   //   res.send('Hi founder and Ceo')
