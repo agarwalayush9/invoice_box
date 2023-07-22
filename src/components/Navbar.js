@@ -15,7 +15,7 @@ export default function Navbar(nav) {
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("detail");
-    navigate("/Login");
+    navigate("/About");
     nav.showAlert("info", "Logged Out");
   };
   const wrap=()=>{

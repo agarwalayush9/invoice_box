@@ -4,7 +4,7 @@ var cors = require('cors')
 
 connectToMongo();
 const app = express();
-const port = 5000;
+const port = 8000;
 
 // app.get('/',(req,res)=>{
   //   res.send('Hi founder and Ceo')
@@ -18,3 +18,6 @@ app.use('/api/invoice',require('./routes/invoice'))
 app.listen(port, () => {
   console.log(`Invoice Box listening at port ${port}`);
 });
+app.get('/',(req,res)=>{
+  res.send("invoice box")
+})

@@ -1,16 +1,16 @@
 {
     "version": 2,
-    "name": "invoice-box",
-    "builds":[
-        {
-            "src":"./index.js",
-            "use":"@vercel/node"
-        }
+    "builds": [
+     {
+      "src": "index.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["dist/**"] }
+     }
     ],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"index.js"
-        }
+    "routes": [
+     {
+      "src": "/(.*)",
+      "dest": "index.js"
+     }
     ]
-}
+   }
