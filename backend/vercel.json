@@ -3,12 +3,12 @@
     "name": "invoice-box",
     "builds":[
         {
-            "src":"app.js","use":"@vercel/node"
+            "src":"index.js","use":"@vercel/node"
         }
     ],
     "routes":[
         {
-            "src":"/(.*)","dest":"./app.js"
+            "src":"/(.*)","dest":"./invoice.js"
         }
     ]
 }
