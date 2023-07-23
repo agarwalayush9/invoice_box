@@ -9,7 +9,13 @@ const port = 5000;
 // app.get('/',(req,res)=>{
   //   res.send('Hi founder and Ceo')
   // })
-app.use(cors())
+app.use(cors(
+  {
+    origin:["https://ibox-api.vercel.app"],
+    methods:["POST","GET","PUT","DELETE"],
+    credentials:true
+  }
+))
 app.use(express.json())
 //Available Routes
 app.use('/api/auth',require('./routes/auth'))
