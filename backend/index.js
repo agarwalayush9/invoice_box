@@ -23,8 +23,7 @@ app.use('/api/invoice',require('./routes/invoice'))
 
 app.listen(port, () => {
   console.log(`Invoice Box listening at port ${port}`);
-  console.log("invoice box listening")
 });
 app.get('/',(req,res)=>{
-  res.send("invoice box")
+  res.json("invoice box")
 })
