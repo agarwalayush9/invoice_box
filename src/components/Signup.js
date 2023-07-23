@@ -14,7 +14,7 @@ const Signup = (props) => {
         props.showAlert("error","Password and Confirm password mismatch");
         return;
       }
-      const response = await fetch("http://localhost:5000/api/auth/createuser",{
+      const response = await fetch("https://ibox-api.vercel.app/api/auth/createuser",{
         method: 'POST',
         headers:{
           'Content-Type':'application/json',

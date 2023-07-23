@@ -2,7 +2,7 @@ import { useState } from "react";
 import InvoiceContext from "./invoiceContext";
 
 const InvoiceState =(props)=>{
-    const host = "http://localhost:5000"
+    const host = "https://ibox-api.vercel.app"
     const invoiceList= []
       const [invoice,setInvoice] = useState(invoiceList)
     
