@@ -18,8 +18,8 @@ app.use(cors(
 ))
 app.use(express.json())
 //Available Routes
-// app.use('/api/auth',require('./routes/auth'))
-// app.use('/api/invoice',require('./routes/invoice'))
+app.use('/api/auth',require('./routes/auth'))
+app.use('/api/invoice',require('./routes/invoice'))
 
 app.listen(port, () => {
   console.log(`Invoice Box listening at port ${port}`);
