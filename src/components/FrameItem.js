@@ -32,9 +32,9 @@ const FrameItem = (props) => {
       <img
         alt="Pdf/png"
         id="im"
-        src="../../uploads/default_icon.png"
+        src="../../uploads/default_box.png"
         style={{ width: "120px", height: "140px" }}
-      ></img>
+      />
       <div id="frameBody">
         <small style={{ fontFamily: "monospace" }}>
           <i className="fa fa-tag" style={{ color: "#f06b6b" }}></i>&nbsp;
