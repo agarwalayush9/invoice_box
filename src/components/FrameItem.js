@@ -34,7 +34,7 @@ const FrameItem = (props) => {
         alt="Pdf/png"
         id="im"
         src={img}
-        style={{ width: "100px", height: "140px" }}
+        style={{ width: "80px", height: "100px" }}
       />
       <div id="frameBody">
         <small style={{ fontFamily: "monospace" }}>
