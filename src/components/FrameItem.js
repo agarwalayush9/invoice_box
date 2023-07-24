@@ -32,7 +32,7 @@ const FrameItem = (props) => {
       <img
         alt="Pdf/png"
         id="im"
-        src=""
+        src="../../uploads/default_icon.png"
         style={{ width: "120px", height: "140px" }}
       ></img>
       <div id="frameBody">
