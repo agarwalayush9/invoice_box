@@ -31,6 +31,7 @@ const FrameItem = (props) => {
       <br />
       <img
         alt="Pdf/png"
+        onerror="this.src='../uploads/default_icon.png'"
         id="im"
         src=""
         style={{ width: "120px", height: "140px" }}
