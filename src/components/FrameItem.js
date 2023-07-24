@@ -14,8 +14,10 @@ const FrameItem = (props) => {
   const del=()=>{
     if(document.getElementById("item")){
       let widthC= itemW.current.offsetWidth -50;
+      let heightC= itemW.current.offsetHeight -50;
       delIn.current.style.display="block";
       delIn.current.style.width=widthC + "px";
+      delIn.current.style.height=heightC + "px";
     }
   }
   const vis=()=>{
