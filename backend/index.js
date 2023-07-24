@@ -11,7 +11,7 @@ const port = 5000;
   // })
 app.use(cors(
   {
-    origin:[""],
+    origin:["https://invoice-box.vercel.app"],
     methods:["POST","GET","PUT","DELETE"],
     credentials:true
   }

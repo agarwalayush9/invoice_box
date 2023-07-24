@@ -10,8 +10,6 @@ const Login = (props) => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       const response = await fetch("https://ibox-api.vercel.app/api/auth/login",{
-        mode:'no-cors',
-        credentials:'include',
         method: 'POST',
         headers:{
           'Content-Type':'application/json',
