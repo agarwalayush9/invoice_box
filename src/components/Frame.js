@@ -14,7 +14,7 @@ const Frame = (props) => {
     }
     else{
       // console.log("login")
-      navigate("/login");
+      navigate("/About");
     }
     // eslint-disable-next-line
   }, []);
