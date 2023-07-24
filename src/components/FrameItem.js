@@ -2,6 +2,7 @@ import React,{useContext, useRef} from "react";
 import moment from "moment/moment";
 import "font-awesome/css/font-awesome.min.css";
 import invoiceContext from "../context/invoice/invoiceContext";
+import img from "./uploads/default_box.png"
 
 const FrameItem = (props) => {
   const delIn= useRef(null);
@@ -32,7 +33,7 @@ const FrameItem = (props) => {
       <img
         alt="Pdf/png"
         id="im"
-        src="../../uploads/default_box.png"
+        src={img}
         style={{ width: "120px", height: "140px" }}
       />
       <div id="frameBody">
