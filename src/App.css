@@ -7,6 +7,47 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   float: left;
 }
+.expenses{
+  background: -webkit-linear-gradient(#26e5d5, #106e8d);
+  /* font-weight: 600; */
+  background-clip: text;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  -webkit-text-fill-color: transparent;
+
+}
+.expenseF{
+  background: -webkit-linear-gradient( #348ca9,#6ea9ce);
+  /* font-weight: 600; */
+  background-clip: text;
+  font-family:cursive;
+  font-size:x-large;
+  -webkit-text-fill-color: transparent;
+}
+#features{
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* margin: auto; */
+}
+#about{
+  /* position: fixed; */
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* margin: auto; */
+  /* color: wheat; */
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 #dropDown {
   position: absolute;

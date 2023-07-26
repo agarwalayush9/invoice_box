@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 // import invoiceContext from "../context/invoice/invoiceContext";
 import { useNavigate } from "react-router-dom";
+import Fotter from "./Fotter";
 
 const Login = (props) => {
     const navigate = useNavigate();
@@ -103,6 +104,7 @@ const Login = (props) => {
           </button>
           
         </form>
+        <Fotter/>
       </div>
     );
 }
